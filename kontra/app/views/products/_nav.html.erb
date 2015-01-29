@@ -1,0 +1,9 @@
+<% @games.each do |name, image| %>
+  <div class="game">
+    <%= link_to product_path(id: name) do %>
+    <br/>
+    <%= image_tag image, style: "width 100px; height: 100px" %>
+    <% end %>
+  </div>
+<% end %>
+<br clear="all"/>
